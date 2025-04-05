@@ -10,7 +10,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Show the selected tab's content
             const tab = button.getAttribute("data-tab"); // Get the tab ID from the button's data-tab attribute
-            document.getElementById(tab).classList.remove("hidden"); // Remove the hidden class to display the content
+            const activeContent = document.getElementById(tab); // Select the corresponding content section
+            if (activeContent) {
+                activeContent.classList.remove("hidden"); // Remove the hidden class to display the content
+            }
         });
     });
 });
