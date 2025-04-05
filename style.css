@@ -53,10 +53,6 @@ nav {
     display: block;
 }
 
-/* Ensures the "Welcome" section is shown by default */
-#welcome { 
-    display: block;
-}
 
 /* Styles for the footer section */
 footer {
