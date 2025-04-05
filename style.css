@@ -1,27 +1,62 @@
-/* style.css */
-
+/* General styles for the entire webpage */
 body {
     font-family: 'JetBrains Mono', monospace; /* Sets the font style to JetBrains Mono */
-    margin: 0; /* Removes the default margin */
-    padding: 0; /* Removes the default padding */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
     background-color: #f4f4f9; /* Sets the background color of the page */
-    color: #333; /* Sets the default text color */
+    color: #333; /* Defines the default text color */
 }
 
+/* Styles for the header section */
 header {
-    background-color: #222; /* Sets the background color of the header */
-    color: #fff; /* Sets the text color of the header to white */
-    padding: 10px 20px; /* Adds padding inside the header for spacing */
+    background-color: #222; /* Sets the header background to dark grey */
+    color: #fff; /* Sets the text color to white */
+    padding: 10px 20px; /* Adds padding around the header text */
     text-align: center; /* Centers the text within the header */
 }
 
-main {
-    padding: 20px; /* Adds padding to the main content area for spacing */
+/* Styles for the navigation bar */
+nav {
+    text-align: center; /* Centers the navigation buttons horizontally */
+    margin: 20px 0; /* Adds vertical spacing around the navigation bar */
 }
 
+.tab-btn {
+    font-family: 'JetBrains Mono', monospace; /* Ensures buttons use the specified font */
+    padding: 10px 20px; /* Adds padding within each button */
+    margin: 0 10px; /* Adds spacing between buttons */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    background-color: #333; /* Sets the button background color to dark grey */
+    color: #fff; /* Sets the button text color to white */
+    border: none; /* Removes the default border */
+    border-radius: 5px; /* Rounds the button corners slightly */
+}
+
+/* Button hover state */
+.tab-btn:hover {
+    background-color: #555; /* Changes the background color when the button is hovered */
+}
+
+/* Styles for tab content sections */
+.tab-content {
+    padding: 20px; /* Adds padding within the content area */
+    display: none; /* Hides the content initially */
+}
+
+/* Hidden class ensures a section remains hidden */
+.tab-content.hidden {
+    display: none;
+}
+
+/* Ensures active content is displayed */
+.tab-content:not(.hidden) {
+    display: block;
+}
+
+/* Styles for the footer section */
 footer {
-    background-color: #222; /* Sets the background color of the footer */
-    color: #fff; /* Sets the text color of the footer to white */
-    padding: 10px 20px; /* Adds padding inside the footer for spacing */
+    background-color: #222; /* Sets the footer background to dark grey */
+    color: #fff; /* Sets the text color to white */
+    padding: 10px 20px; /* Adds padding around the footer text */
     text-align: center; /* Centers the text within the footer */
 }
