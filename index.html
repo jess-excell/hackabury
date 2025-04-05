@@ -4,17 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hackabury</title>
-    <link rel="stylesheet" href="style.css"> <!-- Links the external CSS file -->
+    <link rel="stylesheet" href="style.css"> <!-- Links to the CSS file -->
 </head>
 <body>
     <header>
         <h1>Hackabury</h1>
     </header>
+    <nav>
+        <!-- Navigation Tabs -->
+        <button class="tab-btn" data-tab="team">Meet the Team</button>
+        <button class="tab-btn" data-tab="faq">FAQ</button>
+    </nav>
     <main>
-        <p>Welcome to Hackabury! Your platform for creativity and innovation.</p>
+        <!-- Sections for each tab -->
+        <section id="team" class="tab-content">
+            <h2>Meet the Team</h2>
+            <p>Learn about the amazing team behind Hackabury.</p>
+        </section>
+        <section id="faq" class="tab-content hidden">
+            <h2>FAQ</h2>
+            <p>Find answers to common questions about Hackabury.</p>
+        </section>
     </main>
     <footer>
         <p>&copy; 2025 Hackabury. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script> <!-- Links to the JavaScript file -->
 </body>
 </html>
