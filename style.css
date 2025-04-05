@@ -53,6 +53,11 @@ nav {
     display: block;
 }
 
+/* Ensures the "Welcome" section is shown by default */
+#welcome { 
+    display: block;
+}
+
 /* Styles for the footer section */
 footer {
     background-color: #222; /* Sets the footer background to dark grey */
