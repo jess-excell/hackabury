@@ -5,16 +5,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
     buttons.forEach(button => {
         button.addEventListener("click", () => {
-            // Hide all tab content sections
+            // Hide all content sections, including the "Welcome" section
             contents.forEach(content => content.classList.add("hidden"));
 
             // Get the ID of the corresponding tab from the button's data-tab attribute
             const tab = button.getAttribute("data-tab");
 
-            // Find the tab content section that matches the ID
+            // Find the tab content section that matches the retrieved ID
             const activeContent = document.getElementById(tab);
 
-            // Show the matching tab content if it exists
+            // If the matching tab content exists, remove the "hidden" class to display it
             if (activeContent) {
                 activeContent.classList.remove("hidden");
             }
