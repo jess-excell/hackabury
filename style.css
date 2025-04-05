@@ -1,0 +1,27 @@
+/* style.css */
+
+body {
+    font-family: 'JetBrains Mono', monospace; /* Sets the font style to JetBrains Mono */
+    margin: 0; /* Removes the default margin */
+    padding: 0; /* Removes the default padding */
+    background-color: #f4f4f9; /* Sets the background color of the page */
+    color: #333; /* Sets the default text color */
+}
+
+header {
+    background-color: #222; /* Sets the background color of the header */
+    color: #fff; /* Sets the text color of the header to white */
+    padding: 10px 20px; /* Adds padding inside the header for spacing */
+    text-align: center; /* Centers the text within the header */
+}
+
+main {
+    padding: 20px; /* Adds padding to the main content area for spacing */
+}
+
+footer {
+    background-color: #222; /* Sets the background color of the footer */
+    color: #fff; /* Sets the text color of the footer to white */
+    padding: 10px 20px; /* Adds padding inside the footer for spacing */
+    text-align: center; /* Centers the text within the footer */
+}
