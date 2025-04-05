@@ -1,18 +1,26 @@
-// Wait for the DOM to load before executing the script
+// Wait for the DOM (Document Object Model) to load completely before executing the script
 document.addEventListener("DOMContentLoaded", () => {
-    const buttons = document.querySelectorAll(".tab-btn"); // Select all navigation buttons
-    const contents = document.querySelectorAll(".tab-content"); // Select all tab content sections
+    // Select all navigation buttons with the class "tab-btn"
+    const buttons = document.querySelectorAll(".tab-btn");
 
+    // Select all tab content sections with the class "tab-content"
+    const contents = document.querySelectorAll(".tab-content");
+
+    // Loop through each button to add a click event listener
     buttons.forEach(button => {
         button.addEventListener("click", () => {
-            // Hide all content sections
+            // Hide all tab content sections by adding the "hidden" class to each
             contents.forEach(content => content.classList.add("hidden"));
 
-            // Show the selected tab's content
-            const tab = button.getAttribute("data-tab"); // Get the tab ID from the button's data-tab attribute
-            const activeContent = document.getElementById(tab); // Select the corresponding content section
+            // Get the ID of the corresponding tab from the button's data-tab attribute
+            const tab = button.getAttribute("data-tab");
+
+            // Find the tab content section that matches the retrieved ID
+            const activeContent = document.getElementById(tab);
+
+            // If the matching tab content exists, remove the "hidden" class to display it
             if (activeContent) {
-                activeContent.classList.remove("hidden"); // Remove the hidden class to display the content
+                activeContent.classList.remove("hidden");
             }
         });
     });
