@@ -3,19 +3,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const buttons = document.querySelectorAll(".tab-btn"); // Select all navigation buttons
     const contents = document.querySelectorAll(".tab-content"); // Select all tab content sections
 
-    // Event listener for each button
     buttons.forEach(button => {
         button.addEventListener("click", () => {
-            // Hide all content sections, including the "Welcome" section
-            contents.forEach(content => content.classList.add("hidden")); // Adds "hidden" class to all sections
-            
-            // Get the ID of the corresponding tab from the button's data-tab attribute
+            // Add "hidden" class to all sections, including the "Welcome" section
+            contents.forEach(content => content.classList.add("hidden")); 
+
+            // Get the ID of the tab linked to the clicked button
             const tab = button.getAttribute("data-tab");
 
-            // Find and display the matching tab content
+            // Display the matching tab content by removing its "hidden" class
             const activeContent = document.getElementById(tab);
             if (activeContent) {
-                activeContent.classList.remove("hidden"); // Removes "hidden" class from the clicked tab's content
+                activeContent.classList.remove("hidden"); 
             }
         });
     });
