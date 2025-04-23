@@ -5,6 +5,10 @@ body {
     padding: 0; /* Removes default padding */
     background-color: #f4f4f9; /* Sets the background color of the page */
     color: #333; /* Defines the default text color */
+    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures content always takes up whole page*/
 }
 
 /* Styles for the header section */
@@ -19,6 +23,10 @@ header {
 nav {
     text-align: center; /* Centers the navigation buttons horizontally */
     margin: 20px 0; /* Adds vertical spacing around the navigation bar */
+}
+
+main {
+    flex: 1; /* Allows main content to grow and push footer to the bottom */
 }
 
 .tab-btn {
